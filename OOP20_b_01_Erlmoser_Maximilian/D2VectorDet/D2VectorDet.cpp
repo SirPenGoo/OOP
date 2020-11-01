@@ -13,7 +13,7 @@ vector<vector<double>> readFile(string fpath) {
                 string line;
                 vector<double> tempVec;
                 for (int j = 0; j < 3; j++) {
-                    getline(myfile, line, ','); //Funktioniert nur, wenn vor \n ein Komma steht
+                    getline(myfile, line, ','); //Funktioniert nur, wenn vor \n ein Komma steht im Textfile
                     tempVec.push_back(stod(line));
                 }
                 matrix.push_back(tempVec);

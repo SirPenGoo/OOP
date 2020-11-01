@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{32bcd591-4f4b-43ec-97c6-12cc53218e69}</ProjectGuid>
-    <RootNamespace>D1Vector</RootNamespace>
+    <ProjectGuid>{fd0c2f0e-7b59-4412-8211-960f28ad8308}</ProjectGuid>
+    <RootNamespace>D2VectorDet</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="D1Vector.cpp" />
+    <ClCompile Include="D2VectorDet.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

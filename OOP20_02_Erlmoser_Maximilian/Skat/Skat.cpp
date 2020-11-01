@@ -1,5 +1,14 @@
-// Skat.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*==========================================================
+|	Assignment:		OOP_HUE02
+|	File:			Skat.cpp
+|	Author:			Maximilian Erlmoser
+|	University:		FH Salzburg
+|	Semester:		ITS-B WS20/21
+|	Date:			30.10.2020
+|-----------------------------------------
+|	Description:	Erstellen eines Skat-Kartendecks
+|                   Das Deck wird anschlieﬂend gemischt
+*=========================================================*/
 
 #include <iostream>
 #include <array>
@@ -32,7 +41,7 @@ struct KARTE {
     Zahl zahl;
 };
 
-array<shared_ptr<KARTE>, 32> fillDeck(){
+array<shared_ptr<KARTE>, 32> fillDeck() {
     int index = 0;
     array<shared_ptr<KARTE>, 32> arr;
     for (int i = 0; i <= 3; i++) {
@@ -101,14 +110,14 @@ int main()
 {
     array<shared_ptr<KARTE>, 32> arr = fillDeck();
     unsigned seed = chrono::system_clock::now().time_since_epoch().count();
-    
+
     cout << "Sortiert:" << endl;
     for (int i = 0; i < 32; i++) {
         coutFarbe(arr[i]);
     }
 
     shuffle(arr.begin(), arr.end(), default_random_engine(seed));
-    
+
     cout << "Gemischt:" << endl;
     for (int i = 0; i < 32; i++) {
         coutFarbe(arr[i]);

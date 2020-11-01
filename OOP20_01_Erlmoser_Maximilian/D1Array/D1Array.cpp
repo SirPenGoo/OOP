@@ -1,3 +1,14 @@
+/*==========================================================
+|	Assignment:		OOP_HUE01
+|	File:			D1Array.cpp
+|	Author:			Maximilian Erlmoser
+|	University:		FH Salzburg
+|	Semester:		ITS-B WS20/21
+|	Date:			26.10.2020
+|-----------------------------------------
+|	Description:	Erstellt ein Array und gibt es aus.
+*=========================================================*/
+
 #include <string>
 #include <array>
 #include <iostream>

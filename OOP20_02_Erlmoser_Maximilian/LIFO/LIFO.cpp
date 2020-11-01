@@ -1,3 +1,17 @@
+/*==========================================================
+|	Assignment:		OOP_HUE02
+|	File:			LIFO.cpp
+|	Author:			Maximilian Erlmoser
+|	University:		FH Salzburg
+|	Semester:		ITS-B WS20/21
+|	Date:			01.11.2020
+|-----------------------------------------
+|	Description:	Realisierung eines Lagers
+|					Ein Lager hat mehrere Fächer, die wie
+|                   die wie ein Stack funktionieren und
+|					beliebig viele Materialien halten
+*=========================================================*/
+
 #include <iostream>
 #include <string>
 #include <stack>
@@ -51,7 +65,7 @@ int main()
         lager[i] = Einlagern(lager[i], id, mat, bez);
         id++;
         mat++;
-        bez = bez.append(bez);        
+        bez = bez.append(bez);
         lager[i] = Einlagern(lager[i], id, mat, bez);
         id++;
         mat++;
@@ -59,6 +73,5 @@ int main()
     }
 
     coutLager(lager);
-
 
 }

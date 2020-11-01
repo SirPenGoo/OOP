@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a1c7e1fb-9e8e-455e-824b-66c615ac368d}</ProjectGuid>
-    <RootNamespace>D2VectorDet</RootNamespace>
+    <ProjectGuid>{42ce705e-cfce-485f-b28d-2255bfe299d8}</ProjectGuid>
+    <RootNamespace>LIFO</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="D2VectorDet.cpp" />
+    <ClCompile Include="LIFO.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

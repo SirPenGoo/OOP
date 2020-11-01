@@ -1,0 +1,2 @@
+Programmname=C:\Users\erlmo\source\repos\SirPenGoo\OOP\OOP20_01_Erlmoser_Maximilian\Debug\D1Vector.exe
+Argumente=0

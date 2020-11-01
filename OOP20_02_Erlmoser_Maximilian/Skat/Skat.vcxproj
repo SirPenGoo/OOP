@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ba47c287-58e0-4d24-91ce-ed445b3a040d}</ProjectGuid>
+    <ProjectGuid>{e4ac6904-a076-4232-9218-ccf21c59ba62}</ProjectGuid>
     <RootNamespace>Skat</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

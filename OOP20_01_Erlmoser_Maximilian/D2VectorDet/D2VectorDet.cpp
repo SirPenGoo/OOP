@@ -1,3 +1,15 @@
+/*==========================================================
+|	Assignment:		OOP_HUE01
+|	File:			D2VectorDet.cpp
+|	Author:			Maximilian Erlmoser
+|	University:		FH Salzburg
+|	Semester:		ITS-B WS20/21
+|	Date:			26.10.2020
+|-----------------------------------------
+|	Description:	Berechnung der Determinante einer
+|                   3x3 Matrix, die von File eingelesen wird
+*=========================================================*/
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -9,22 +21,22 @@ vector<vector<double>> readFile(string fpath) {
     vector<vector<double>> matrix;
     ifstream myfile(fpath);
     if (myfile.is_open()) {
-            for (int i = 0; i < 3; i++) {
-                string line;
-                vector<double> tempVec;
-                for (int j = 0; j < 3; j++) {
-                    getline(myfile, line, ','); //Funktioniert nur, wenn vor \n ein Komma steht im Textfile
-                    tempVec.push_back(stod(line));
-                }
-                matrix.push_back(tempVec);
+        for (int i = 0; i < 3; i++) {
+            string line;
+            vector<double> tempVec;
+            for (int j = 0; j < 3; j++) {
+                getline(myfile, line, ','); //Funktioniert nur, wenn vor \n ein Komma steht im Textfile
+                tempVec.push_back(stod(line));
             }
-            myfile.close();
+            matrix.push_back(tempVec);
+        }
+        myfile.close();
     }
     return matrix;
 }
 
 double calcDeterminant(vector<vector<double>> vec) {
-    double diag1, diag2, diag3; 
+    double diag1, diag2, diag3;
     double diag4, diag5, diag6;
 
     diag1 = vec[0][0] * vec[1][1] * vec[2][2];
@@ -43,7 +55,7 @@ double calcDeterminant(vector<vector<double>> vec) {
     return det;
 }
 
-void coutDet(vector<vector<double>> v, double det){
+void coutDet(vector<vector<double>> v, double det) {
     cout << "\t" << "[" << v[0][0] << "\t" << v[0][1] << "\t" << v[0][2] << "\t]\n";
     cout << "det" << "\t" << "[" << v[1][0] << "\t" << v[1][1] << "\t" << v[1][2] << "\t] = " << det << "\n";
     cout << "\t" << "[" << v[2][0] << "\t" << v[2][1] << "\t" << v[2][2] << "\t]\n";

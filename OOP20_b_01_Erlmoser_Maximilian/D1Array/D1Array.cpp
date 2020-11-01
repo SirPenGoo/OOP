@@ -14,7 +14,7 @@ void coutArray(array<double, 8> a) {
 }
 
 int main() {
-	array<double, 8> arr{ 0,0,0,0,0,0,0,0 };
+	array<double, 8> arr{ 0 };
 
 	for (int i = 1; i < 8; i++) {
 		arr[i] = arr[i - 1] + 0.3456789;

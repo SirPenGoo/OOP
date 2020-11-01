@@ -44,9 +44,9 @@ double calcDeterminant(vector<vector<double>> vec) {
 }
 
 void coutDet(vector<vector<double>> v, double det){
-    cout << "\t" << "[" << v[0][0] << "," << v[0][1] << "," << v[0][2] << "]\n";
-    cout << "det" << "\t" << "[" << v[1][0] << "," << v[1][1] << "," << v[1][2] << "] =" << det << "\n";
-    cout << "\t" << "[" << v[2][0] << "," << v[2][1] << "," << v[2][2] << "]\n";
+    cout << "\t" << "[" << v[0][0] << "\t" << v[0][1] << "\t" << v[0][2] << "\t]\n";
+    cout << "det" << "\t" << "[" << v[1][0] << "\t" << v[1][1] << "\t" << v[1][2] << "\t] = " << det << "\n";
+    cout << "\t" << "[" << v[2][0] << "\t" << v[2][1] << "\t" << v[2][2] << "\t]\n";
 }
 
 int main(int argc, const char* argv[])

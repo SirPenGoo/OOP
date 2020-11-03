@@ -17,7 +17,7 @@ using namespace std;
 void coutArray(array<double, 8> a) {
 	for (int i = 0; i < 4; i++) {
 		cout << a[i] << " ";
-	}
+	} // a
 	cout << endl;
 	for (int i = 0; i < 4; i++) {
 		cout << a[i] << " ";
